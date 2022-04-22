@@ -36,7 +36,7 @@ class ArrayRectangles:
         if self.length != len(self.__rectangle_array):
             self.__rectangle_array.append(rectangle)
             return True
-        return False
+        raise ValueError
 
     def number_max_area(self):
         variables_area = [i.area() for i in self.__rectangle_array] if self.__rectangle_array else None
